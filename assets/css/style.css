@@ -1,0 +1,144 @@
+/* Pré-definições*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    transition: all 150ms linear;
+/*    font-family: 'Poppins', sans-serif;*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    /*header*/
+    --header-color: #aeaeae;
+    /*main*/
+    --main-btn: #CDCDCD;
+    --main-bg: #Ad5f6a;
+    /*footer*/
+    --footer-bg:#222222;
+    --footer-color:#CCC;
+    --footer-color-links: #918e8e;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+/*
+
+    SPACE
+
+*/
+body {
+    background-color: #e5e5e5;
+}
+/*
+
+    SPACE
+
+*/
+.container {
+    width: 1024px;
+    margin: auto;
+    padding: 50px 20px;
+    background-color: #FFF;
+}
+header {
+    background-color: #FFF;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0px;
+}/*
+header .logo {}
+header .logo img {}
+nav {}*/
+nav ul {
+    list-style: none;
+}
+nav ul li {
+    display: inline-block;
+}
+nav ul li a {
+    text-decoration: none;
+    padding: 25px 20px;
+    border-bottom: 3px solid transparent;
+    text-transform: uppercase;
+    color: var(--header-color);
+    font-weight: 700;
+}
+nav ul li a:hover {
+    border-bottom: 3px solid var(--footer-bg);
+}
+/*
+
+    SPACE
+
+*/
+main .container{
+    background-color: var(--main-bg);
+}
+ main a {
+    text-decoration: none;
+    font-size: 10px;
+    padding: 15px 45px;
+    background-color: var(--main-btn);
+}
+main h1 {
+    font-size: 18px;
+    /*font-weight: ;*/
+    text-transform: uppercase;
+    margin: 20px auto;
+}
+/*
+
+    SPACE
+
+*/
+footer {
+    background-color: var(--footer-bg);
+    color: var(--footer-color);
+}
+footer .container {
+    background-color: inherit;
+}
+footer a {
+    color: var(--footer-color);
+    text-decoration: none;
+}
+footer .footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .social-media-links {
+    background-color: var(--footer-color);
+    padding: 5px;
+    width: fit-content;
+    border-radius: 15px;
+
+}/*
+footer .social-media-links a img{
+
+}*/
+footer .politcs {
+    border-top: 3px solid var(--footer-color);
+    padding-top: 20px;
+    margin-top: 30px;
+}
+footer .politcs ul {
+    list-style: none;
+}
+footer .politcs ul li {
+    display: inline-block;
+    padding: 3px 20px;
+    border-left: 2px solid var(--footer-color);
+}
+footer .politcs ul li:first-child {
+    border-left: 0;
+    padding-left: 0;
+}
+footer .copy {
+    margin-top: 20px;
+}
+
+
+
